@@ -7,5 +7,4 @@ test('test', async ({ page }) => {
   await page.locator('[data-test="password"]').click();
   await page.locator('[data-test="password"]').fill('secret_sauce');
   await page.locator('[data-test="login-button"]').click();
-
-});
+  await expect(page).toHaveTitle('Swag Labs'););
